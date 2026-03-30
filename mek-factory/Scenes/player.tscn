@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bbgsxepxqxghh"]
+
+[ext_resource type="Script" uid="uid://bmnfnqu634rjd" path="res://Scripts/player.gd" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
+size = Vector2(40, 40)
+
+[node name="Player" type="CharacterBody2D" unique_id=1629641075]
+script = ExtResource("1_v0iea")
+
+[node name="Colisao_player" type="CollisionShape2D" parent="." unique_id=986631858]
+shape = SubResource("RectangleShape2D_f60y1")
+
+[node name="AparenciaTemporariaPlayer" type="ColorRect" parent="." unique_id=91480191]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+color = Color(0.6431373, 0.36862746, 0.6509804, 1)
