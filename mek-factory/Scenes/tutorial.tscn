@@ -45,3 +45,6 @@ shape = SubResource("RectangleShape2D_omtrn")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Limitacoes_borda" unique_id=1375839436]
 position = Vector2(1205.5, 325)
 shape = SubResource("RectangleShape2D_i6t4g")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1080121817]
+offset = Vector2(575.825, 321.955)
