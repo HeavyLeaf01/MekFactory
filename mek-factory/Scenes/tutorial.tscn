@@ -1,28 +1,31 @@
 [gd_scene format=3 uid="uid://u88kfm0u0do7"]
 
 [ext_resource type="PackedScene" uid="uid://bbgsxepxqxghh" path="res://Scenes/player.tscn" id="1_ka2pi"]
+[ext_resource type="Script" uid="uid://c0utk8eukj8aq" path="res://Scripts/tutorial.gd" id="1_omtrn"]
+[ext_resource type="PackedScene" uid="uid://dmhn1t1l3mejv" path="res://Scenes/maquina_1.tscn" id="2_feyax"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ka2pi"]
-size = Vector2(1276.5, 40)
+size = Vector2(2050.25, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_feyax"]
-size = Vector2(191, 644)
+size = Vector2(191, 1080)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_omtrn"]
-size = Vector2(1210, 166)
+size = Vector2(2122, 166)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i6t4g"]
-size = Vector2(105, 697)
+size = Vector2(105, 1080.5)
 
 [node name="Tutorial" type="Node2D" unique_id=1626300770]
+script = ExtResource("1_omtrn")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=571702992]
 
 [node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground" unique_id=778558671]
 
 [node name="ChaoTemporario" type="ColorRect" parent="ParallaxBackground/Layer1" unique_id=801894192]
-offset_right = 1153.0
-offset_bottom = 646.0
+offset_right = 1924.0
+offset_bottom = 1083.0
 color = Color(0.7372549, 0.60784316, 0.09803922, 1)
 
 [node name="Player" parent="." unique_id=1629641075 instance=ExtResource("1_ka2pi")]
@@ -31,20 +34,23 @@ position = Vector2(576.5, 500)
 [node name="Limitacoes_borda" type="StaticBody2D" parent="." unique_id=655554646]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limitacoes_borda" unique_id=1792729212]
-position = Vector2(556, -20)
+position = Vector2(942.875, -20)
 shape = SubResource("RectangleShape2D_ka2pi")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Limitacoes_borda" unique_id=1147037493]
-position = Vector2(-96, 322)
+position = Vector2(-96, 540)
 shape = SubResource("RectangleShape2D_feyax")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Limitacoes_borda" unique_id=700376683]
-position = Vector2(587, 729)
+position = Vector2(884, 1163)
 shape = SubResource("RectangleShape2D_omtrn")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Limitacoes_borda" unique_id=1375839436]
-position = Vector2(1205.5, 325)
+position = Vector2(1973, 541)
 shape = SubResource("RectangleShape2D_i6t4g")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1080121817]
-offset = Vector2(575.825, 321.955)
+offset = Vector2(960.115, 539.755)
+
+[node name="Maquina1" parent="." unique_id=1490691631 instance=ExtResource("2_feyax")]
+position = Vector2(104, 104)

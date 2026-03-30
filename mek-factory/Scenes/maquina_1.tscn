@@ -1,3 +1,32 @@
 [gd_scene format=3 uid="uid://dmhn1t1l3mejv"]
 
-[node name="Maquina1" type="Node2D" unique_id=1112245241]
+[ext_resource type="Script" uid="uid://drqx2aom2phk2" path="res://Scripts/maquina_1.gd" id="1_2nsar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yw2g"]
+size = Vector2(9.999999, 9.999998)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nsar"]
+size = Vector2(100, 78)
+
+[node name="Maquina1" type="StaticBody2D" unique_id=1490691631]
+script = ExtResource("1_2nsar")
+
+[node name="colisao_maquina" type="CollisionShape2D" parent="." unique_id=1429267636]
+position = Vector2(-9.536743e-07, -2.861023e-06)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_5yw2g")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=666676333]
+offset_left = -5.0000005
+offset_top = -4.9999967
+offset_right = 4.9999995
+offset_bottom = 5.0000033
+scale = Vector2(10, 10)
+pivot_offset = Vector2(5, 5)
+color = Color(0.39215687, 0.043137256, 1, 1)
+
+[node name="TesteProximidade" type="Area2D" parent="." unique_id=234724169]
+
+[node name="ColisaoTesteProximidade" type="CollisionShape2D" parent="TesteProximidade" unique_id=904958983]
+position = Vector2(0, 90)
+shape = SubResource("RectangleShape2D_2nsar")
