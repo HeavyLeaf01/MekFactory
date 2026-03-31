@@ -1,31 +1,33 @@
 [gd_scene format=3 uid="uid://dtasynnmya1xx"]
 
-[node name="telaMenu1" type="Node2D" unique_id=448524130]
+[ext_resource type="Script" uid="uid://ijpu7x2pbmmy" path="res://Scripts/tela_menu_1.gd" id="1_2osp5"]
+[ext_resource type="Texture2D" uid="uid://buyikajtua31a" path="res://icon.svg" id="1_rnqul"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1664086509]
-
-[node name="menu1" type="Control" parent="CanvasLayer" unique_id=965319646]
+[node name="telaMenu1" type="Control" unique_id=334645501]
 process_mode = 2
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
+script = ExtResource("1_2osp5")
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/menu1" unique_id=1487859881]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1487859881]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 0.22352941)
+metadata/_edit_use_anchors_ = true
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/menu1" unique_id=2082001536]
+[node name="GridContainer" type="GridContainer" parent="." unique_id=2082001536]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="CanvasLayer/menu1" unique_id=104681784]
+[node name="Button" type="Button" parent="." unique_id=104681784]
 layout_mode = 0
-offset_left = 405.0
-offset_top = 349.0
-offset_right = 606.0
-offset_bottom = 634.0
+offset_left = 780.0
+offset_top = 434.0
+offset_right = 916.0
+offset_bottom = 570.0
+icon = ExtResource("1_rnqul")
+flat = true
+metadata/_edit_use_anchors_ = true
