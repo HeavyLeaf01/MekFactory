@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bbgsxepxqxghh" path="res://Scenes/player.tscn" id="1_ka2pi"]
 [ext_resource type="Script" uid="uid://c0utk8eukj8aq" path="res://Scripts/tutorial.gd" id="1_omtrn"]
 [ext_resource type="PackedScene" uid="uid://dmhn1t1l3mejv" path="res://Scenes/maquina_1.tscn" id="2_feyax"]
+[ext_resource type="PackedScene" uid="uid://dtasynnmya1xx" path="res://Scenes/telaMenu1.tscn" id="4_i6t4g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ka2pi"]
 size = Vector2(2050.25, 40)
@@ -54,3 +55,7 @@ offset = Vector2(960.115, 539.755)
 
 [node name="Maquina1" parent="." unique_id=1490691631 instance=ExtResource("2_feyax")]
 position = Vector2(104, 104)
+
+[node name="Menus" type="CanvasLayer" parent="." unique_id=553896782]
+
+[node name="telaMenu1" parent="Menus" unique_id=334645501 instance=ExtResource("4_i6t4g")]

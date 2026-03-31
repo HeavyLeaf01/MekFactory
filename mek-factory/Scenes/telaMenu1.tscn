@@ -4,12 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://buyikajtua31a" path="res://icon.svg" id="1_rnqul"]
 
 [node name="telaMenu1" type="Control" unique_id=334645501]
-process_mode = 2
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_2osp5")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1487859881]
+[node name="Fundo" type="ColorRect" parent="." unique_id=1487859881]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
@@ -20,7 +19,6 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=104681784]
 layout_mode = 0
