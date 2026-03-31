@@ -28,5 +28,28 @@ color = Color(0.39215687, 0.043137256, 1, 1)
 [node name="TesteProximidade" type="Area2D" parent="." unique_id=234724169]
 
 [node name="ColisaoTesteProximidade" type="CollisionShape2D" parent="TesteProximidade" unique_id=904958983]
-position = Vector2(0, 90)
+position = Vector2(0, 88)
 shape = SubResource("RectangleShape2D_2nsar")
+
+[node name="PopUp" type="ColorRect" parent="." unique_id=771003319]
+offset_left = -67.0
+offset_top = -65.0
+offset_right = -27.0
+offset_bottom = -25.0
+
+[node name="textoPopUp" type="RichTextLabel" parent="PopUp" unique_id=2089220735]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 29
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="TesteProximidade" to="." method="_on_teste_proximidade_body_entered"]
+[connection signal="body_exited" from="TesteProximidade" to="." method="_on_teste_proximidade_body_exited"]

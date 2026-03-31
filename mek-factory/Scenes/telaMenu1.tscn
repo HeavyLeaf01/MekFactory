@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dtasynnmya1xx"]
+
+[node name="telaMenu1" type="Node2D" unique_id=448524130]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1664086509]
+
+[node name="menu1" type="Control" parent="CanvasLayer" unique_id=965319646]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/menu1" unique_id=1487859881]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.22352941)
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/menu1" unique_id=2082001536]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="CanvasLayer/menu1" unique_id=104681784]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 349.0
+offset_right = 606.0
+offset_bottom = 634.0

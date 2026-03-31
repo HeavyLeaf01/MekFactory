@@ -1,7 +1,14 @@
 extends StaticBody2D
 
 func _ready():
-	var teste_proximidade = $TesteProximidade
+	$PopUp.visible = false
+func _on_teste_proximidade_body_entered(body):
+	if body.name == "Player": 
+		$PopUp.visible = true
+func _on_teste_proximidade_body_exited(body):
+	if body.name == "Player":
+		$PopUp.visible = false
 
-func _on_body_entered(teste_proximidade):
-	pass
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("Acao") and $PopUp.visible == true:
+		pass
